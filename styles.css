@@ -9,7 +9,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    width: 200px; /* Adjust width as needed */
+    width: 200px; /* Adjust this width as necessary */
     height: 100%;
     background-color: #333;
     box-sizing: border-box;
@@ -27,8 +27,8 @@ nav ul li a {
     color: white;
     text-decoration: none;
     padding: 10px 15px;
-    display: block; /* Makes the entire area clickable */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    display: block;
+    transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
@@ -36,31 +36,20 @@ nav ul li a:hover {
 }
 
 header {
-    position: relative; /* Needed for positioning the pseudo-element if you decide to add one for the overlay */
-    background-image: url('emy-nguyen-tnafznPigzw-unsplash.jpg');
+    position: relative;
+    background-image: url('emy-nguyen-tnafznPigzw-unsplash.jpg'); /* Adjust the path as necessary */
     background-size: cover;
     background-position: center;
     color: #fff;
     text-align: center;
     padding: 50px 0;
-    margin-left: 200px; /* Offset the same as nav width to prevent overlap */
-}
-
-/* Optional: If you want an overlay effect directly in the header, adjust opacity here */
-header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
-    pointer-events: none; /* Allows clicks to pass through */
+    margin-left: 200px; /* Ensure this matches the width of your nav */
 }
 
 main {
-    margin-left: 200px; /* Offset to prevent being hidden by nav */
+    margin-left: 200px; /* Ensure this matches the width of your nav */
     padding: 20px;
+    box-sizing: border-box;
 }
 
 footer {
@@ -68,8 +57,9 @@ footer {
     background-color: #333;
     text-align: center;
     padding: 10px;
-    margin-left: 200px; /* Offset to prevent being hidden by nav */
+    margin-left: 200px; /* Ensure this matches the width of your nav */
 }
+
 
 article, section, aside {
     margin-left: 220px; /* Adjust the margin to not overlap with the fixed nav */
