@@ -72,13 +72,28 @@ main {
     color: #333; /* Dark text for readability */
 }
 
+.medusa-page aside {
+    background-color: #CCFFCC; /* Light green for Medusa */
+    color: #333; /* Ensuring text is readable */
+}
+
 .persephone-page {
-    background-color: #C21807; /* Pomegranate red for Persephone page */
+    background-color: #FF6961; /* Pomegranate red for Persephone page */
+    color: #FFFFFF; /* White text for readability */
+}
+
+.persephone-page aside {
+    background-color: #FF6961; /* Pastel red for Persephone */
     color: #FFFFFF; /* White text for readability */
 }
 
 .helen-page {
     background-color: #FFC0CB; /* Light pink for Helen page */
+    color: #333; /* Dark text for readability */
+}
+
+.helen-page aside {
+    background-color: #FFC0CB; /* Light pink for Helen */
     color: #333; /* Dark text for readability */
 }
 
