@@ -15,21 +15,30 @@ header, footer {
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    text-align: center; /* Center align the navigation items */
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+    display: inline-block; /* Change display to inline-block for box-like behavior */
+    margin: 0 10px; /* Adjust margin as needed */
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    background-color: #333; /* Background color for the links */
+    padding: 10px 15px; /* Add padding to create a box around the text */
+    border-radius: 5px; /* Optional: Adds rounded corners to the boxes */
+    display: inline-block; /* Ensure the padding and background color are applied */
 }
 
-a:hover {
-    text-decoration: underline;
+nav ul li a:hover {
+    background-color: #555; /* Change background color on hover */
+    color: #ddd; /* Optional: Change text color on hover */
+    text-decoration: none; /* Remove underline on hover */
 }
+
 
 article, section, aside {
     margin: 1em;
