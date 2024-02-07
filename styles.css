@@ -21,6 +21,7 @@ header::before {
     /* Define a single ::before pseudo-element with both background image and overlay */
     content: ''; /* Required for pseudo-elements */
     position: absolute; /* Position relative to the header */
+    pointer-events: none;
     top: 0;
     left: 0;
     width: 100%;
