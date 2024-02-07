@@ -67,6 +67,23 @@ main {
     box-sizing: border-box;
 }
 
+.medusa-page {
+    background-color: #CCFFCC; /* Light green for Medusa page */
+    color: #333; /* Dark text for readability */
+}
+
+.persephone-page {
+    background-color: #C21807; /* Pomegranate red for Persephone page */
+    color: #FFFFFF; /* White text for readability */
+}
+
+.helen-page {
+    background-color: #FFC0CB; /* Light pink for Helen page */
+    color: #333; /* Dark text for readability */
+}
+
+
+
 footer {
     color: #fff;
     background-color: #333;
