@@ -5,7 +5,31 @@ body {
     background-color: #f0f0f0;
 }
 
-header, footer {
+header {
+    position: relative; /* Needed for positioning the pseudo-element */
+    background-image: url('https://photos.app.goo.gl/sBgbdnGhNqADPw1SA');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+    /* Ensure the text is placed above the overlay */
+    z-index: 1;
+}
+
+header::before {
+    content: ''; /* Required for pseudo-elements */
+    position: absolute; /* Position relative to the header */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5); /* White overlay with 50% opacity */
+    z-index: -1; /* Ensure the overlay is behind the content */
+}
+
+
+footer {
     background-color: #333;
     color: #fff;
     text-align: center;
