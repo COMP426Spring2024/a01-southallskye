@@ -7,7 +7,7 @@ body {
 
 header {
     position: relative; /* Needed for positioning the pseudo-element */
-    background-image: url('/Users/skyesouthall/Documents/GitHub/lab-02-southallskye/Mythology-Project/emy-nguyen-tnafznPigzw-unsplash.jpg'); 
+    background-image: url('emy-nguyen-tnafznPigzw-unsplash.jpg'); 
     background-size: cover;
     background-position: center;
     color: #fff;
