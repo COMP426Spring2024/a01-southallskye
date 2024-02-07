@@ -7,7 +7,7 @@ body {
 
 header {
     position: relative; /* Needed for positioning the pseudo-element */
-    background-image: url('https://photos.app.goo.gl/sBgbdnGhNqADPw1SA');
+    background-image: url(https://photos.app.goo.gl/sBgbdnGhNqADPw1SA);
     background-size: cover;
     background-position: center;
     color: #fff;
