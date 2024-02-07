@@ -5,49 +5,38 @@ body {
     background-color: #f0f0f0;
 }
 
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 200px; /* Adjust this width as necessary */
-    height: 100%;
-    background-color: #333;
-    box-sizing: border-box;
-    padding-top: 20px;
-    z-index: 1000; /* Ensure nav is above other content */
+header {
+    background-color: #333; /* Solid color for the header */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: inline-block; /* Center the nav in the header */
+}
+
+nav ul li {
+    display: inline; /* Display nav items in a row */
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    background-color: #333; /* Initial background color for links */
     padding: 10px 15px;
-    display: block;
-    transition: background-color 0.3s;
+    display: inline-block; /* Apply padding and background color */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
 
 nav ul li a:hover {
-    background-color: #555;
-}
-
-header {
-    position: relative;
-    background-image: url('emy-nguyen-tnafznPigzw-unsplash.jpg'); /* Adjust the path as necessary */
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    text-align: center;
-    padding: 50px 0;
-    margin-left: 200px; /* Ensure this matches the width of your nav */
+    background-color: #555; /* Change background color on hover */
 }
 
 main {
-    margin-left: 200px; /* Ensure this matches the width of your nav */
     padding: 20px;
     box-sizing: border-box;
 }
@@ -57,8 +46,9 @@ footer {
     background-color: #333;
     text-align: center;
     padding: 10px;
-    margin-left: 200px; /* Ensure this matches the width of your nav */
+    margin-top: 20px; /* Add some space above the footer */
 }
+
 
 
 article, section, aside {
