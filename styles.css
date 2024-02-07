@@ -5,26 +5,16 @@ body {
     background-color: #f0f0f0;
 }
 
-header {
-    text-align: center; /* Center the header text */
-    padding: 20px 0; /* Adjusted padding */
-    color: #fff;
-    /* Removed background image, position, and z-index from the header */
-}
-
-header::before {
-    /* Removed the ::before pseudo-element styles since the overlay effect might not be needed for the side menu */
-}
-
 nav {
-    position: fixed; /* Fix position to the side of the window */
-    top: 0; /* Align to the top of the viewport */
-    left: 0; /* Align to the left side of the viewport */
-    width: 200px; /* Width of the sidebar */
-    height: 100%; /* Full height */
-    background-color: #333; /* Background color of the sidebar */
-    padding-top: 20px; /* Space at the top */
-    box-sizing: border-box; /* Includes padding in the width */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px; /* Adjust width as needed */
+    height: 100%;
+    background-color: #333;
+    box-sizing: border-box;
+    padding-top: 20px;
+    z-index: 1000; /* Ensure nav is above other content */
 }
 
 nav ul {
@@ -33,29 +23,52 @@ nav ul {
     margin: 0;
 }
 
-nav ul li {
-    margin: 10px 0; /* Space between menu items */
-}
-
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
     padding: 10px 15px;
-    display: block; /* Make the links fill the container */
+    display: block; /* Makes the entire area clickable */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
 
 nav ul li a:hover {
     background-color: #555;
 }
 
-footer {
-    background-color: #333;
+header {
+    position: relative; /* Needed for positioning the pseudo-element if you decide to add one for the overlay */
+    background-image: url('emy-nguyen-tnafznPigzw-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
     color: #fff;
     text-align: center;
-    padding: 1em;
-    position: fixed; /* Keep the footer at the bottom */
+    padding: 50px 0;
+    margin-left: 200px; /* Offset the same as nav width to prevent overlap */
+}
+
+/* Optional: If you want an overlay effect directly in the header, adjust opacity here */
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     bottom: 0;
-    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+    pointer-events: none; /* Allows clicks to pass through */
+}
+
+main {
+    margin-left: 200px; /* Offset to prevent being hidden by nav */
+    padding: 20px;
+}
+
+footer {
+    color: #fff;
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+    margin-left: 200px; /* Offset to prevent being hidden by nav */
 }
 
 article, section, aside {
