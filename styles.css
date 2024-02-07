@@ -113,6 +113,12 @@ article, section, aside {
     border: 1px solid #ccc;
 }
 
+#vote-section {
+    background-color: #4a4a48; /* Example color for the vote section */
+    color: #333; /* Text color for readability */
+    padding: 20px;
+}
+
 img {
     max-width: 100%;
     height: auto;
