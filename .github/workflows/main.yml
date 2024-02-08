@@ -1,0 +1,30 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - gh-pages  # Trigger deployment on pushes to the gh-pages branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        
+      - name: Build and deploy
+        run: |
+          # Add any build commands here, such as compiling your site
+          # For example, if using Jekyll:
+          # bundle exec jekyll build
+          # Or for npm:
+          # npm install && npm run build
+          # Copy the built files to the deploy directory
+          cp -r * ../gh-pages
+        working-directory: path/to/your/site
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./gh-pages
